@@ -18,8 +18,10 @@ export default function Home() {
 
     });
     response = await response.json()
+    console.log(response)
     // console.log(response[1][0].CategoryName)
     setFoodItems(response[0])
+    console.log(foodItems);
     setFoodCat(response[1])
   }
 
